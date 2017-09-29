@@ -1,3 +1,37 @@
 利用了swiper插件制作了一个卡片化页面切换功能
 特性：
-1.
+1.自适应图片居中显示
+2.自适应手机屏幕大小
+3.两侧图片有阴影遮罩效果
+4.实现图片懒加载效果
+
+
+注意：
+   .swiper-slide {
+         width:82% !important;
+        padding:0 2%; 
+        }
+      这段样式是实现两边图显示边缘的关键
+      
+      
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+           centeredSlides: true,
+           loop: true,
+           roundLengths : true, 
+           initialSlide :2,
+           speed:600,
+           slidesPerView:"auto",
+           centeredSlides : true,
+           lazyLoading : true,
+           lazyLoadingInPrevNext : true,
+           lazyLoadingInPrevNextAmount : 2
+    });
+
+        // 使div能够居中显示
+        window.onload=function(){  
+        var swiper = document.getElementById("swiper");  
+        var scale = (window.screen.height-90) / window.screen.width;  
+        swiper.style.height = document.body.clientWidth * scale + "px";  
+        } 
+    </script>
