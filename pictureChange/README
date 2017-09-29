@@ -1,3 +1,6 @@
+可以根据swiper官网中的方法自行调试出自己的效果
+swiper官网：http://www.swiper.com.cn/api/index.html
+
 利用了swiper插件制作了一个卡片化页面切换功能
 特性：
 1.自适应图片居中显示
