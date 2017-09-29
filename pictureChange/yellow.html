@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Demo styles -->
+    <style>
+    body {
+        background: #333;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        margin: 20px auto;
+    }
+    .swiper-slide.swiper-slide-active{
+       opacity: 1;
+    }
+    .swiper-slide {
+         width:82% !important;
+        padding:0 2%; 
+        text-align: center;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+            opacity: 0.2;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background: url("e9c63634ed5fc2cd4f5273f640ec4fce.gif")no-repeat center;
+    }
+    .swiper-slide img{
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        width: 100%;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: -3px 17px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+    .wrapper{
+        position: relative;
+    }
+    .wrapper::before{
+        position: absolute;
+        left:0;
+        top:0;
+        display: block;
+        content: "";
+        background: rgba(255,255,255,0.5);
+    }
+    .bottom{
+        position: absolute;
+        left:0;
+        bottom:0;
+        color:#fff;
+        background: rgba(0,0,0,0.5);
+        line-height: 50px;
+            width: 100%;
+    border-radius: 0 0 20px 20px;
+    height:50px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+<div class="swiper-container" id="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+             <div class="wrapper">               
+             <img  data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506685871713&di=f157ca07cc44aa4904842ba0c1876e39&imgtype=0&src=http%3A%2F%2Feasyread.ph.126.net%2FH1UqJlW8_OGlPF5ndH5DAA%3D%3D%2F7916760796919243232.jpg" class="swiper-lazy">
+             <div class="bottom">
+                 I love this
+             </div>
+             </div>
+
+            </div>
+            <div class="swiper-slide">
+               <div class="wrapper">   
+              <img data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506685871713&di=7886d1f8e9119ac2670705aa82457ce3&imgtype=0&src=http%3A%2F%2Fimg.warting.com%2Fallimg%2F2016%2F0727%2F1-160HGR519.jpg" alt=""  class="swiper-lazy">
+             <div class="bottom">
+                 I love this
+             </div>
+             </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper"> 
+              <img data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506685871716&di=c952cde52a96512ab2d12a4727301ce1&imgtype=0&src=http%3A%2F%2Fimg.warting.com%2Fallimg%2F2016%2F0727%2F1-160HGR643.jpg" alt=""  class="swiper-lazy">
+             <div class="bottom">
+                 I love this
+             </div>
+             </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper"> 
+              <img data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506685871712&di=d936e03c389382db2cff1daa2a29094f&imgtype=0&src=http%3A%2F%2Ff2.dn.anqu.com%2Fdown%2FM2M1OA%3D%3D%2Fallimg%2F1403%2F54-14031G01541.jpg" alt=""  class="swiper-lazy">
+             <div class="bottom">
+                 I love this
+             </div>
+             </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper"> 
+              <img data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506685871711&di=73dc5c946ae785088de9bb8789c5528f&imgtype=0&src=http%3A%2F%2Fd.5857.com%2Fhwk_151210%2Fdesk_001.jpg" alt=""  class="swiper-lazy">
+             <div class="bottom">
+                 I love this
+             </div>
+             </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper"> 
+              <img data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506685871711&di=2dc527972f3961e3b7c812eb4e5984f9&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201601%2F06%2F20160106114500_cuEz8.jpeg" alt=""  class="swiper-lazy">
+             <div class="bottom">
+                 I love this
+             </div>
+             </div>
+            </div>
+        </div>
+ </div>
+
+
+    <!-- Swiper JS -->
+    <script src="dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+           centeredSlides: true,
+           loop: true,
+           roundLengths : true, 
+           initialSlide :2,
+           speed:600,
+           slidesPerView:"auto",
+           centeredSlides : true,
+           lazyLoading : true,
+           lazyLoadingInPrevNext : true,
+           lazyLoadingInPrevNextAmount : 2
+    });
+
+        // 使div能够居中显示
+        window.onload=function(){  
+        var swiper = document.getElementById("swiper");  
+        var scale = (window.screen.height-90) / window.screen.width;  
+        swiper.style.height = document.body.clientWidth * scale + "px";  
+        } 
+    </script>
+
+
+</body>
+</html>
